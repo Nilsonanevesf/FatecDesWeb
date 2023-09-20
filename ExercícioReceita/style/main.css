@@ -1,0 +1,10 @@
+*{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+button {
+    background-color: #ff6a28;
+    border-radius: 10px;
+    border-color:transparent;
+    color: #fff;
+}
