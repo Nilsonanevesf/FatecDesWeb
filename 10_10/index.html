@@ -10,12 +10,15 @@
   </head>
   <body>
     <h2>Lâmpada</h2>
-    <img src="img/luzDesligada.gif" alt="Lâmpada Desligada" srcset="" id="lampada" onmousemove="ligar()" onmouseout="desligar()">
+    <img src="img/luzDesligada.gif" alt="Lâmpada Desligada" srcset="" id="lampada" onmousemove="ligar()" onmouseout="desligar()" onmousewheel="rotacionar()">
     <button type="button" onclick="ligaDesliga()">Ligue/Desligue</button>
     <button type="button" onclick="ligar()">Ligue</button>
     <button type="button" onmouseover="desligar()">Desligue</button>
     <button type="button" onclick="{lampada.hidden = false}">Aparecer</button>
     <button type="button" onclick="{lampada.hidden = true}">Sumir</button>
+    <button type="button" onclick="voltarNoTempo()">Voltar no Tempo</button>
+    <button type="button" onclick="brilharMais()">Mais Brilhante</button>
+    <button type="button" onclick="piscaPisca()">Pisca Pisca</button>
   </body>
   
 </html>
