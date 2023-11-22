@@ -1,5 +1,6 @@
 var $elemento = document.getElementById("pesquisa")
 
+
 $elemento.addEventListener('click', async function(){
     document.getElementById('resultado').innerText = ""
         var valor= document.getElementById("cep").value
@@ -18,7 +19,7 @@ $elemento.addEventListener('click', async function(){
             if (dados.erro)
                document.getElementById('resultado').innerText = "CEP Não Existe";
             else
-               document.getElementById('resultado').innerText = dados.logradouro + " "+ dados.bairro
+               document.getElementById('resultado').innerText = `${dados.logradouro}, ${dados.bairro}, ${dados.localidade}-${dados.uf}`
     
     
      }
